@@ -1,4 +1,6 @@
 #include <stdbool.h>
+#include <stdlib.h>
+#include <stdio.h>
 #define MAX_NUM_VERT 100 // indica número máximo de vértices
 #define ERRO -1 // valor que indica erro
 #define VERTICE_INVALIDO NULL // valor que indica vértice inválido

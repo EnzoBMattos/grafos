@@ -1,4 +1,6 @@
 #include <stdbool.h>
+#include <stdlib.h>
+#include <stdio.h>
 #define MAX_NUM_VERT 100 // indica número máximo de vértices
 #define ERRO -1 // valor que indica erro
 #define VERTICE_INVALIDO -1 // valor que indica vértice inválido
@@ -17,6 +19,7 @@ bool inicializaGrafo(Grafo* g, int numVert);
 int obtemNrVert(Grafo* g);
 Peso obtemPesoAresta(int v1, int v2, Grafo* g);
 void verificaValVert(int v, Grafo* g);
+void verificaValGrafo(Grafo* g);
 void insereAresta(int v1, int v2, Peso p, Grafo* g);
 bool existeAresta(int v1, int v2, Grafo* g);
 bool removeAresta(int v1, int v2, Peso* p, Grafo* g);

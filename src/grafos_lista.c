@@ -1,6 +1,4 @@
 #include "grafo_listaAdj.h"
-#include <stdlib.h>
-#include <stdio.h>
 
 bool inicializaGrafo(Grafo* g, int numVert) {
     verificaValGrafo(g);

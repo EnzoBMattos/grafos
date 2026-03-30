@@ -1,6 +1,4 @@
-#include "grafo_matrizadj.h"
-#include <stdlib.h>
-#include <stdio.h>
+#include "grafo_matrizAdj.h"
 
 bool inicializaGrafo(Grafo* g, int numVert) {
     for (int i = 0; i < numVert; i++) {
