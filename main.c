@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "grafos.h"
 #include "busca_profundidade.h"
+#include "busca_largura.h"
 
 int main () {
     Grafo g;
@@ -10,6 +11,7 @@ int main () {
     insereAresta(3, 4, 1, &g);
     insereAresta(4, 7, 1, &g);
     insereAresta(9, 0, 1, &g);
+    insereAresta(7, 1, 0, &g);
     imprimeGrafo(&g);
 
     if(existeCaminho(1, 7, &g)) {
@@ -27,6 +29,8 @@ int main () {
     }
 
     printf("ha %d componentes conexos no grafo\n", componentesConexos(&g));
+
+    menorCaminho(1, 7, &g);
 
     return 0;
 }

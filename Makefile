@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -Iinclude -Wno-unused-parameter
-SRC_COMMON = main.c src/bprofundidade.c
+SRC_COMMON = main.c src/bprofundidade.c src/blargura.c src/fila.c
 SRC_LISTA = src/grafos_lista.c
 SRC_MATRIZ = src/grafos_matriz.c
 EXEC_LISTA = main_lista
